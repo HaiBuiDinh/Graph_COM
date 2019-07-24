@@ -29,9 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.txtCOMPort = new System.Windows.Forms.TextBox();
             this.GR1 = new System.Windows.Forms.GroupBox();
+            this.btnExit = new System.Windows.Forms.Button();
             this.txtKQ = new System.Windows.Forms.TextBox();
             this.btnDisConn = new System.Windows.Forms.Button();
             this.btnConn = new System.Windows.Forms.Button();
@@ -39,8 +41,8 @@
             this.txtBaudrate = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.z1 = new ZedGraph.ZedGraphControl();
-            this.btnExit = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnClear = new System.Windows.Forms.Button();
             this.GR1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,6 +61,7 @@
             // 
             // GR1
             // 
+            this.GR1.Controls.Add(this.btnClear);
             this.GR1.Controls.Add(this.btnExit);
             this.GR1.Controls.Add(this.txtKQ);
             this.GR1.Controls.Add(this.btnDisConn);
@@ -73,6 +76,16 @@
             this.GR1.TabIndex = 1;
             this.GR1.TabStop = false;
             this.GR1.Text = "Config";
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(512, 44);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(57, 20);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // txtKQ
             // 
@@ -146,21 +159,21 @@
             this.z1.TabIndex = 2;
             this.z1.UseExtendedPrintDialog = true;
             // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(512, 18);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(57, 21);
-            this.btnExit.TabIndex = 3;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(512, 19);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(57, 20);
+            this.btnClear.TabIndex = 7;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
             // Form1
             // 
@@ -169,8 +182,10 @@
             this.ClientSize = new System.Drawing.Size(598, 363);
             this.Controls.Add(this.z1);
             this.Controls.Add(this.GR1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Opacity = 0.9D;
+            this.Text = "Graph COM";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.GR1.ResumeLayout(false);
             this.GR1.PerformLayout();
@@ -192,6 +207,7 @@
         private ZedGraph.ZedGraphControl z1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 
