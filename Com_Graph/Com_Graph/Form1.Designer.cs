@@ -155,7 +155,7 @@
             this.z1.ScrollMinX = 0D;
             this.z1.ScrollMinY = 0D;
             this.z1.ScrollMinY2 = 0D;
-            this.z1.Size = new System.Drawing.Size(575, 256);
+            this.z1.Size = new System.Drawing.Size(575, 354);
             this.z1.TabIndex = 2;
             this.z1.UseExtendedPrintDialog = true;
             // 
@@ -179,7 +179,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(598, 363);
+            this.ClientSize = new System.Drawing.Size(598, 462);
             this.Controls.Add(this.z1);
             this.Controls.Add(this.GR1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com_Graph", "Com_Graph\Com_Graph.csproj", "{AAF91337-8CA0-4204-9662-212D82A1BB97}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GraphFromCOM", "..\GraphFromCOM\GraphFromCOM.vdproj", "{26C15E1C-3343-48A5-BBD0-885651B91092}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{AAF91337-8CA0-4204-9662-212D82A1BB97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAF91337-8CA0-4204-9662-212D82A1BB97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAF91337-8CA0-4204-9662-212D82A1BB97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26C15E1C-3343-48A5-BBD0-885651B91092}.Debug|Any CPU.ActiveCfg = Debug
+		{26C15E1C-3343-48A5-BBD0-885651B91092}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
